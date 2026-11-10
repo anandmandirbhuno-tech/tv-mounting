@@ -1,7 +1,3 @@
-{
-    auto_https off
-}
-
 :{$PORT:80} {
     root * /app
     php_server
