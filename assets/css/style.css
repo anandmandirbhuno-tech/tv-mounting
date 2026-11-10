@@ -1,0 +1,288 @@
+/* ---------- BASE ---------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #0f172a;
+    background-color: #f8fafc;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ---------- HEADER ---------- */
+.tts-header {
+    position: sticky;
+    top: 15px;
+    z-index: 999;
+}
+
+.tts-header .navbar {
+    background: linear-gradient(135deg, #020617, #0f172a);
+    border-radius: 999px;
+    padding: 12px 24px;
+    box-shadow: 0 12px 40px rgba(2, 6, 23, 0.4);
+}
+
+.header-logo {
+    height: 70px;
+    width: auto;
+    max-width: 220px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .header-logo {
+        height: 55px;
+    }
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    font-size: 15px;
+    color: #cbd5f5;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #facc15;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn-primary {
+    background: linear-gradient(135deg, #facc15, #f59e0b);
+    border: none;
+    color: #020617;
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+    color: #020617;
+}
+
+.btn-outline-light {
+    border-color: #475569;
+    color: #e5e7eb;
+}
+
+.btn-outline-light:hover {
+    background: #facc15;
+    border-color: #facc15;
+    color: #020617;
+}
+
+.btn {
+    border-radius: 999px;
+    font-weight: 700;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
+/* ---------- HERO ---------- */
+.hero-banner {
+    /* Premium TV Wall Mounting Background Image */
+    background: url("https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=2070&auto=format&fit=crop") center center / cover no-repeat;
+    background-color: #0f172a;
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    /* Dark gradient so text is readable */
+    background: linear-gradient(90deg, rgba(2, 6, 23, 0.85), rgba(2, 6, 23, 0.4));
+}
+
+.hero-title {
+    font-size: 3.4rem;
+    font-weight: 900;
+    line-height: 1.15;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.hero-title span {
+    color: #facc15;
+}
+
+.hero-subtitle {
+    max-width: 720px;
+    margin: 24px auto 0;
+    font-size: 18px;
+    color: #e2e8f0;
+}
+
+.hero-badge {
+    background: linear-gradient(135deg, #2563eb, #0ea5e9);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 2.3rem;
+    }
+}
+
+/* ---------- CARDS ---------- */
+.card {
+    border: none;
+    border-radius: 18px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(2, 6, 23, 0.12);
+}
+
+.bg-white {
+    border-radius: 18px;
+}
+
+/* ---------- SECTIONS ---------- */
+.bg-light {
+    background-color: #f8fafc !important;
+}
+
+.bg-primary {
+    background: linear-gradient(135deg, #020617, #1e293b) !important;
+}
+
+.bg-primary h2,
+.bg-primary h6,
+.bg-primary p {
+    color: #ffffff;
+}
+
+section h2 {
+    color: #020617;
+    font-weight: 800;
+}
+
+section p.text-muted {
+    color: #64748b !important;
+    max-width: 700px;
+    margin: auto;
+}
+
+section img {
+    transition: transform 0.35s ease;
+}
+
+section img:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- FAQ ACCORDION ---------- */
+#faqAccordion .accordion-item {
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    background: #fff;
+}
+
+#faqAccordion .accordion-button {
+    background: #fff;
+    color: #111827;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 22px 25px;
+    border: none;
+    box-shadow: none !important;
+}
+
+#faqAccordion .accordion-button:not(.collapsed) {
+    background: linear-gradient(135deg, #0d6efd, #0056d6);
+    color: #fff;
+}
+
+#faqAccordion .accordion-body {
+    padding: 25px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #6b7280;
+    background: #fff;
+}
+
+/* ---------- FOOTER ---------- */
+.tts-footer {
+    background: #020617;
+    color: #cbd5f5;
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 14px;
+    color: #f8fafc;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #facc15;
+}
+
+.footer-social a {
+    width: 38px;
+    height: 38px;
+    background: #0f172a;
+    color: #cbd5f5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    background: linear-gradient(135deg, #facc15, #f59e0b);
+    color: #020617;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+    .tts-header {
+        top: 0;
+    }
+    .tts-header .navbar {
+        border-radius: 0;
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
+    #faqAccordion .accordion-button {
+        font-size: 16px;
+        padding: 18px;
+    }
+    #faqAccordion .accordion-body {
+        padding: 18px;
+        font-size: 15px;
+    }
+}
